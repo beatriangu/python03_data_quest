@@ -6,7 +6,7 @@ __pycache__/
 *$py.class
 
 # ==================================================
-# Virtual environments (never part of submission)
+# Virtual environments
 # ==================================================
 venv/
 .venv/
@@ -27,21 +27,21 @@ Thumbs.db
 *.tmp
 
 # ==================================================
-# Personal learning / reflection files (NOT evaluated)
+# Personal learning / reflection files
 # ==================================================
-MAP.md
 learning_*.txt
 learning_*.md
 notes.txt
 notes.md
 
 # ==================================================
-# Subject files / provided documentation (NOT submitted)
+# Subject files / provided documentation
 # ==================================================
 en.subject.pdf
 
 # ==================================================
-# Testing tools & archives (provided but not submitted)
+# Testing tools & helper archives
 # ==================================================
 data_quest_tools/
 data_quest_tools.tar.gz
+
