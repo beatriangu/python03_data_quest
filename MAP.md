@@ -1,230 +1,254 @@
-🧭 MAP.md — Python Garden · Data Quest (versión definitiva)
-# 🧭 MAP.md — Python Garden · Data Quest
-## python03_data_quest — Collections & Data Processing
+🧭 MAP.md — Python Garden · Data Quest
+python03_data_quest — Collections & Data Processing
 
-Este documento es **MI mapa de aprendizaje y diseño**.
-Explica cómo progresa mi razonamiento a lo largo del módulo y cómo cada
-ejercicio añade una capa nueva al uso consciente de datos en Python.
+This document is my learning and design map.
+It explains how my reasoning evolves throughout the module and how each exercise adds a new layer to conscious data handling in Python.
 
-No es una lista de ejercicios: es una **escalera mental**.
-Acompaña al código como guía de comprensión, defensa y revisión.
+This is not a list of exercises.
+It is a mental ladder.
 
----
+It accompanies the code as a guide for understanding, defense, and review.
 
-## 🌱 Idea central del módulo
+🌱 Core Idea
 
-Pasar de:
+Move from:
 
-❌ “tengo datos sueltos”  
-a  
-✅ “sé cómo representarlos, procesarlos y analizarlos”
+❌ “I have scattered data”
+to
+✅ “I know how to represent, process, and analyze it”
 
-**Clave del módulo:**  
-👉 Elegir bien la **estructura de datos** importa más que el algoritmo.
+Key principle:
+👉 Choosing the right data structure matters more than the algorithm.
 
----
+🟢 ex0 — Command Quest
+🎯 Focus
 
-## 🟢 ex0 — Command Quest
+→ Receiving data from outside the program.
 
-**Foco**  
-→ Entrada de datos desde fuera del programa.
+🧠 I Learn
 
-**Aprendo**
-- `sys.argv`
-- Diferencia entre:
-  - nombre del script
-  - argumentos del usuario
-- Flujo de ejecución
+sys.argv
 
-**Clave mental**
-👉 El programa no vive aislado.  
-👉 El mundo exterior envía datos.
+Script name vs user arguments
 
-**Prepara para**
-- Procesar datos reales
-- Validar entradas
+Execution flow
 
----
+🧩 Mental Model
 
-## 🟢 ex1 — Score Analytics
+The program does not live in isolation.
+The external world sends data.
 
-**Foco**  
-→ Procesar datos secuenciales.
+🔗 Prepares For
 
-**Aprendo**
-- Listas
-- Acumulación de valores
-- Estadísticas básicas
-- `try / except`
+Real input handling
 
-**Clave mental**
-👉 Los datos llegan en secuencia.  
-👉 Las listas son el contenedor natural.
+Input validation
 
-**Depende de**
-- Entrada correcta (ex0)
+🟢 ex1 — Score Analytics
+🎯 Focus
 
-**Prepara para**
-- Análisis más estructurado
+→ Processing sequential data.
 
----
+🧠 I Learn
 
-## 🟢 ex2 — Game Coordinate System
+Lists
 
-**Foco**  
-→ Datos estructurados y fijos.
+Accumulation
 
-**Aprendo**
-- Tuplas
-- Inmutabilidad
-- Tuple unpacking
-- Cálculo matemático
-- Validación de formato
+Basic statistics
 
-**Clave mental**
-👉 Algunos datos no deben cambiar.  
-👉 La estructura comunica intención.
+try / except
 
+🧩 Mental Model
 
+Data often arrives in sequence.
+Lists are the natural container.
 
-(x, y, z) → posición
-no → lista genérica
+🔗 Depends On
 
+Correct input handling (ex0)
 
-**Depende de**
-- Procesamiento básico (ex1)
+🔗 Prepares For
 
-**Prepara para**
-- Datos con significado semántico
+More structured analysis
 
----
+🟢 ex2 — Game Coordinate System
+🎯 Focus
 
-## 🟢 ex3 — Achievement Tracker
+→ Structured and fixed data.
 
-**Foco**  
-→ Unicidad y análisis lógico.
+🧠 I Learn
 
-**Aprendo**
-- Sets
-- Eliminación automática de duplicados
-- Operaciones:
-  - unión
-  - intersección
-  - diferencia
+Tuples
 
-**Clave mental**
-👉 No todo es contar.  
-👉 A veces es comparar conjuntos.
+Immutability
 
-**Prepara para**
-- Analítica sin bucles complejos
+Tuple unpacking
 
----
+Mathematical calculations
 
-## 🟢 ex4 — Inventory Master
+Format validation
 
-**Foco**  
-→ Relaciones complejas entre datos.
+🧩 Mental Model
 
-**Aprendo**
-- Diccionarios
-- Estructuras anidadas
-- Clave → valor
-- Modelado de dominio
+Some data should not change.
+Structure communicates intent.
 
+(x, y, z)  →  position
+not  →  generic list
+🔗 Depends On
 
+Basic processing (ex1)
 
-Jugador
-└── inventario
-├── item
-│ ├── cantidad
-│ ├── rareza
-│ └── valor
+🔗 Prepares For
 
+Semantically meaningful data
 
-**Clave mental**
-👉 Cuando hay relaciones → diccionario.  
-👉 El dato tiene nombre.
+🟢 ex3 — Achievement Tracker
+🎯 Focus
 
-**Depende de**
-- Comprender colecciones simples
+→ Uniqueness and logical comparison.
 
-**Prepara para**
-- Sistemas reales
+🧠 I Learn
 
----
+Sets
 
-## 🟢 ex5 — Data Stream
+Automatic duplicate removal
 
-**Foco**  
-→ Procesar datos sin cargarlos todos.
+Operations:
 
-**Aprendo**
-- Iteradores
-- Generadores
-- Procesamiento incremental
-- Pensamiento streaming
+union
 
-**Clave mental**
-👉 No todo cabe en memoria.  
-👉 Se procesa mientras llega.
+intersection
 
-**Prepara para**
-- Archivos, streams y pipelines
+difference
 
----
+🧩 Mental Model
 
-## 🟢 ex6 — Analytics Dashboard
+Not everything is counting.
+Sometimes it is comparing collections.
 
-**Foco**  
-→ Expresión clara y potente.
+🔗 Prepares For
 
-**Aprendo**
-- List comprehensions
-- Dict comprehensions
-- Set comprehensions
-- Agregación
-- Formato de salida
+Cleaner analytics without complex loops
 
-**Clave final**
-👉 El código puede ser:
-- corto
-- legible
-- expresivo  
+🟢 ex4 — Inventory Master
+🎯 Focus
 
-sin perder claridad.
+→ Complex data relationships.
 
-**Integra**
-- Todo el módulo
+🧠 I Learn
 
----
+Dictionaries
 
-## 🧠 Visión global
+Nested structures
 
+Key → value modeling
 
+Domain modeling
 
-ex0 → entrada
-ex1 → secuencia
-ex2 → estructura
-ex3 → unicidad
-ex4 → relación
+Player
+└── inventory
+    ├── item
+    │   ├── quantity
+    │   ├── rarity
+    │   └── value
+🧩 Mental Model
+
+When there are relationships → use a dictionary.
+Data has names.
+
+🔗 Depends On
+
+Understanding simple collections
+
+🔗 Prepares For
+
+Real-world systems
+
+🟢 ex5 — Data Stream
+🎯 Focus
+
+→ Processing data without loading everything at once.
+
+🧠 I Learn
+
+Iterators
+
+Generators
+
+Incremental processing
+
+Streaming mindset
+
+🧩 Mental Model
+
+Not everything fits in memory.
+Process data as it arrives.
+
+🔗 Prepares For
+
+Files
+
+Streams
+
+Pipelines
+
+🟢 ex6 — Analytics Dashboard
+🎯 Focus
+
+→ Expressive and concise data transformation.
+
+🧠 I Learn
+
+List comprehensions
+
+Dict comprehensions
+
+Set comprehensions
+
+Aggregation
+
+Output formatting
+
+🧩 Final Insight
+
+Code can be:
+
+short
+
+readable
+
+expressive
+
+without sacrificing clarity.
+
+🔗 Integrates
+
+The entire module
+
+🧠 Global Evolution
+ex0 → input
+ex1 → sequence
+ex2 → structure
+ex3 → uniqueness
+ex4 → relationships
 ex5 → streaming
-ex6 → expresión
+ex6 → expression
 
+These are not isolated exercises.
+They build judgment for working with data.
 
-No son ejercicios aislados.  
-Es **criterio para trabajar con datos**.
+🎯 Final Objective
 
----
+Be able to explain:
 
-## 🎯 Objetivo final
+Why I chose this data structure
 
-Ser capaz de explicar:
+What problem it solves
 
-- por qué usé esta estructura
-- qué problema resuelve
-- qué ocurriría con otra opción
-- cómo escalaría el enfoque
+What would happen with another option
 
-Este MAP es **mi brújula del módulo** y refleja cómo pienso el
-procesamiento de datos en Python.
+How the approach scales
+
+This MAP is my compass for the module and reflects how I think about data processing in Python.
